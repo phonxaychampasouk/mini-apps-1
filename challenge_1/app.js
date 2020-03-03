@@ -8,9 +8,6 @@ var player = '';
 
 function checkRow(id) {
 
-  var row = findRow(id)
-row.forEach(index)
-  console.log('Check row row: ', row)
 }
 
 function checkColumn() {
@@ -65,16 +62,24 @@ function placePiece() {
   row[rowIndex] = player;
   event.target.innerHTML = player;
 
-
-
   console.log('row and index value: ', row[rowIndex])
   console.log('row: ', row)
   console.log('row index: ', rowIndex)
   console.log('event.target.innerHTML: ', event.target.innerHTML);
 
-
 }
+
+function resetTable() {
+console.log('resetTable: XXXXXXXXXXXXXXXX')
+}
+console.log(document.getElementById('reset-button'))
+document.getElementById('reset-button').addEventListener("click", resetTable);
+
+
+
 const block = document.getElementsByClassName('block');
 for (var i = 0; i < block.length; i++) {
   block[i].addEventListener(("click"), placePiece)
 };
+
+
