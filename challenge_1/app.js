@@ -9,6 +9,7 @@ var player = '';
 function checkRow(id) {
 
   var row = findRow(id)
+row.forEach(index)
   console.log('Check row row: ', row)
 }
 
